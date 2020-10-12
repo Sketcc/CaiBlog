@@ -1,0 +1,609 @@
+@import './iconcss/icon.css';
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background:#E9EAED;
+    position: relative;
+    text-align: center;
+    font-family: "Heiti SC","Droidsansfallback","Helvetica Neue",Helvetica,sans-serif;
+    font-size: 0.14rem;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #1C2327;
+    position: relative;
+
+   -webkit-user-select:none;
+
+   -moz-user-select:none;
+
+   -ms-user-select:none;
+
+   user-select:none;
+}
+
+.container {
+    position: relative;
+    width: 1170px;
+    height: 60px;
+    margin: 0 auto;
+    background: #1C2327;
+    
+}
+.container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container .container_btn {
+    display: none;
+    color: #fff;
+    float: left;
+    font-size: 36px;
+    line-height: 60px;
+    z-index: 3;
+}
+.container .container_btn:hover{
+   color:#f40;
+}
+
+
+.title {
+    display: inline-block;
+    color: #ccc;
+    line-height: 60px;
+    float: left;
+    margin: 0 15px;
+    font-size: 22px;
+}
+.title span:nth-child(1) {
+  font-size: inherit;
+  padding: 0 5px;
+}
+.title span {
+    font-size: 16px;
+}
+.menu {
+    float: left;
+    padding-left: 30px;
+}
+
+.menu > li {
+    display: inline-block;
+    /* float: left; */
+    height: 60px;
+    width: 58px;
+    color: #ccc;
+    font-size: 16px;
+    line-height: 60px;
+}
+.menu a:hover {
+    color: #f40;
+}
+
+.search_bar .search_w {
+    display: inline-block;
+    position: absolute;
+    /* float: right; */
+    width: 44px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 30px;
+    border-radius: 8px;
+    top:50%;
+   
+    margin-top: -16px;
+    outline: none;
+    color: #fff;
+    right: 0px;
+}
+.search_bar .search_w:hover {
+   cursor: pointer;
+   color: #f40;
+}
+.search_bar .search_w .search_box {
+    display: none;
+}
+.search_bar .search_w:hover .search_box{
+   display: block;
+}
+
+.search_box {
+    width: 1170px;
+    padding: 20px auto;
+    overflow: hidden;
+    background: #ffffff;
+    position: absolute;
+    height: 78px;   
+    text-align: center;  
+    left: -1126px;
+    border-top: 16px solid transparent;
+    z-index: 1;
+}
+
+.search_box  .search_open{
+    height: 100%;
+    width: 600px;
+    line-height: 78px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.search_box  .search_open .search_cont {
+    height: 36px;
+    width: 442px;
+    border-radius: 8px 0 0 8px;
+    padding: 0px 20px 0px 8px;
+    outline: none;
+    border: 1px solid #9fa0a0;
+    font-size: 14px;
+    margin-top: 18px;
+
+}
+.search_box  .search_open .search_sumbit {
+    position: absolute;
+    top: 29%;
+    right: -60px;
+    height: 38px;
+    width: 158px;
+    outline: none;
+    color: #E9EAED;
+    background: #1C2327;
+    border-radius: 0px 8px 8px 0;
+    border: 1px solid #9fa0a0;
+}
+.search_box  .search_open .search_sumbit:hover{
+    color: #f40;
+    cursor: pointer;
+}
+
+
+.search_box .search_close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 30px;
+    color: #7d7e7e;
+    animation: turn 4s .6s ease-in-out infinite;
+}
+.search_box .search_close:hover {
+    color: #f40;
+}
+
+@keyframes turn{
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+/* 内容区 */
+
+.content{
+    /* display: block; */
+    position: relative;
+    width: 1170px;
+    margin: 20px auto 0px auto;
+    /* background: #f40; */
+}
+
+.content_left {
+    float: left;
+    width: 75%;
+    padding: 0 20px 0 0;
+    box-sizing: border-box;
+   
+ }
+ 
+ .content_right {
+    float: right;
+    position: relative;
+    width: 25%;
+    /* background: royalblue; */
+ }
+
+ .content_right .presonal_mes{
+     width: 100%;
+     text-align: left;
+     background: url('../img/presonal3.jpg') round;
+     /* background: #1C2327; */
+    
+ }
+ .presonal_mes h2 {
+    font-size: 22px;
+    margin: 0 0 10px 10px;
+    color: #89919a;
+    font-weight: normal;
+    padding: 10px 0 10px 0;
+}
+.presonal_mes p {
+    font-size: 12px;
+    padding: 0 0 0 20px;
+    line-height: 28px;
+    text-shadow: 0px 1px 2px rgba(0,0,0,.5);
+    color: #d0d2d4;
+}
+.presonal_mes ul {
+    display: flex;
+    list-style: none;  
+    margin-top: 35px; 
+    padding-bottom: 15px;
+}
+.presonal_mes ul li {
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    /* border: 1px solid #fff;
+    border-radius: 50%; */
+}
+.presonal_mes ul li a {
+    text-decoration: none;
+    color: #7d7e7e;
+    display: inline-block;
+    line-height: 63px;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    /* border: 1px solid; */
+    /* border-radius:50%; */
+}
+
+.presonal_mes ul li a:hover {
+    transform: scale(1.5);
+    transition: .3s ;
+
+}
+.presonal_mes ul li:nth-of-type(1) a{
+    color: rgb(247, 172, 34);
+}
+.presonal_mes ul li:nth-of-type(2) a{
+    color: rgb(230, 230, 90);
+}
+.presonal_mes ul li:nth-of-type(3) a{
+    color: rgb(0, 140, 255);
+}
+.presonal_mes ul li:nth-of-type(4) a{
+    color: rgb(25, 187, 25);
+}
+
+
+.presonal_mes ul li:nth-of-type(1) a:hover{
+    color: rgb(194, 138, 35);
+}
+.presonal_mes ul li:nth-of-type(2) a:hover{
+    color: rgb(179, 179, 70);
+}.presonal_mes ul li:nth-of-type(3) a:hover{
+    color: rgb(0, 108, 197);
+}.presonal_mes ul li:nth-of-type(4) a:hover{
+    color: rgb(16, 136, 16);
+}
+
+.right_module {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background: #1c2327;
+    /* background: url('../img/presonal1.jpg') round; */
+
+    color: white;
+    border-radius: 8px;
+    text-align: left;
+    margin-top: 15px;
+    box-shadow: 3px 4px 5px #888;
+}
+.right_module div:nth-child(1)::after {
+            content: '';                 /*CSS伪类用法*/
+            position: absolute;         /*定位背景横线的位置*/
+            top: 34px;
+            left: 5px;
+            border-radius: 50%;
+            background:#000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);       /*宽和高做出来的背景横线*/
+            width: 0px;
+            height: 2px;
+            transition: .6s ease-in;
+
+}
+.right_module div:nth-child(1):hover::after{
+    width: 77px;
+    transition: .3s ease-in-out;
+}
+
+.right_module div {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    padding: 15px 5px 10px 5px;
+    color: #008c8c;
+    cursor: pointer;
+}
+
+.right_module > a {
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
+    color: tomato;
+    /* margin-right: 5px; */
+    padding:0 0 0px 5px;
+    cursor: pointer;
+}
+
+.right_module > ul > li {
+    list-style: none;
+    color: white;
+    padding: 8px 5px;
+    border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+.right_module >ul >li >a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+
+}
+.right_module > ul > li > div {
+    padding: 5px 0;
+}
+.right_module > ul > li > div > span {
+    color: #fff;
+    font-size: 14px;
+}
+.right_module > ul > li > p {
+    font-size: 14px;
+    color: #777;
+}
+.right_module .pull_right {
+    position: absolute;
+    right: 0;
+    padding-right: 5px;
+}
+
+.right_module > span {
+    display: inline-block;
+   text-align: center;
+    padding: 5px 5px;
+    width: 30%;
+    box-sizing: border-box;
+}
+.right_module > span> a {
+    text-decoration: none;
+    color: #abcdef;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.footer{
+    position: relative;
+    margin-top: 100px;
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    background: #1C2327;
+    /* background: url('../img/presonal3.jpg') round; */
+}
+.footer > .footer_module{
+    position: absolute;
+    width: 1170px;
+    margin: 0 auto;
+    background: #1f1f1f;
+    /* background: url('../img/presonal1.jpg') round; */
+
+    top: -80px;
+    left: 19.3%;
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px #888;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.footer >div >ul {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer>div > ul >li {
+    display: inline-block;
+    color: #a2a2a2;
+    float: left;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.footer > div > p{
+    margin-top: 10px;
+    color: #a2a2a2;
+    text-align: left;
+    padding-left: 21%;
+}
+.footer>div > p:nth-of-type(1) {
+    font-size: 18px;
+    color: #008c8c;
+    padding-left: 14%;
+}
+
+.page_tool {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.page_tool > ul > li {
+    list-style: none;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    background: #1C2327;
+    line-height: 30px;
+    color: #fff;
+    border: 1px solid #1C2327;
+    float: left;
+    cursor: pointer;
+} 
+.page_tool > ul > li:hover {
+    background: #fff;
+    color: #1C2327; 
+    border: 1px solid #fff;
+    transition: .3s ease-in-out;
+}
+.page_tool > ul > li:nth-of-type(1) {
+    border-radius: 6px 0 0 6px;
+}
+.page_tool > ul > li:last-child{
+    border-radius: 0 6px 6px 0;
+}
+
+.page_tool .now_page {
+    background: #fff !important;
+    color: #1c2327 !important;
+    border: 1px solid #fff !important;
+}
+
+ /* 媒体查询 */
+
+@media screen and (max-width:1025px) {
+
+ 
+    .container {
+        width: 100%;
+    }
+    .container a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .container .container_btn {
+    display: block;
+    margin-left: 0px;
+    width: 60px;
+   
+
+    }
+    .container .container_btn .rot {
+        display: block;
+     animation: change 2s ease-in-out infinite;
+    }
+    .container .container_btn:hover{
+       color:#f40;
+    }
+    .container .container_btn .screen_menu{
+        display: none;
+        width: 120px;
+        float: left;
+
+    }
+    .container .container_btn .screen_menu li {
+        
+        width: 100%;
+        height: 50px;
+        margin-bottom: 1px solid rgba(0,0,0,.7);
+        font-size: 18px;
+        text-align: center;
+        background-color: #000;
+        opacity: .7; 
+
+    }
+    .container .container_btn .screen_menu li a{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        top: -15px;
+       
+        
+    }
+    .container .container_btn:hover .screen_menu {
+        display: block;
+        position: absolute;
+        float: left;
+        z-index: 3;
+    }
+
+    .menu {
+       display: none;
+    }
+
+    .search_box {  
+        background: #000000;
+        opacity: 0.7;
+       
+    }
+    .container .search_box  .search_open{
+        height: 100%;       
+        line-height: 78px;
+        position: relative;    
+        width: 100%;
+        margin: 0 0;
+    }
+    
+    .search_box  .search_open .search_cont {
+        position: absolute;
+
+        right: 160px;
+        height: 30px;
+        width: 158px;   
+    }
+    .search_box  .search_open .search_sumbit {
+        position: absolute;
+        right: 90px;
+        height: 32px;
+        width: 80px;
+        top: 18px;
+    }
+    .title span {
+        display: none;
+      }
+    
+    @keyframes change {
+        0% {
+            transform: rotate(0);
+        }
+        25% {
+            transform: rotate(45deg);
+        }
+        50% {
+            transform: rotate(0deg);
+        }
+        75% {
+            transform: rotate(-45deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .content {      
+        width: 100%;
+    }
+
+    .content .content_left {
+        width: 100%;
+    }
+
+    .content .content_right {
+        display: none;
+    }
+
+    .footer > .footer_module{
+        left: 0;
+        width: 100%;
+    }
+    .footer > .footer_module > p{
+        padding-left: 0;
+    }
+
+}

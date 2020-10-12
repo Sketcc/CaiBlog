@@ -1,0 +1,231 @@
+.description {
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px 15px 20px 15px;
+    box-shadow: 3px 4px 5px #888;
+    position: relative;
+
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.about_title {
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 20px;
+    text-align: left;
+    margin: 20px 0 20px 0px;
+    border-bottom: 1px solid #eee;
+}
+.description img{
+    display: inline-block;
+    text-align: left;
+    width: 15%;
+    /* height: 15%; */
+    border-radius: 50%;
+    float: left;
+}
+.description h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 35px;
+    color: rgb(70, 70, 70);
+}
+.description h4 {
+    text-align: left;
+    font-size: 1rem;
+    /* font-weight: bolder; */
+    margin-bottom: 20px;
+    color: rgb(119, 119, 119);
+}
+
+.description p {
+    text-align: left;
+    margin-top: 5px;
+    padding: 0px 0px 5px 15px;
+}
+
+.blog_comments {
+    width: 100%;
+}
+
+.blog_comments_msg{
+    margin-top: 20px;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bolder;
+    text-shadow: 1px 2px 3px #666;
+}
+
+.blog_comments_recall{
+   width: 100%;
+   background: #d9edf7;
+   border: 1px dashed rgb(128,64,0);
+   padding: 10px 10px 20px 10px;
+   margin-top: 10px;
+   color: #31708f;
+   text-align: left;
+   box-sizing: border-box;
+}
+
+.blog_comments_recall span {
+    display: inline-block;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.blog_comments_recall div {
+    display: inline-block;
+    width: 100%;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+.description .about_me::after {
+    content: '';                 /*CSS伪类用法*/
+    position: absolute;         /*定位背景横线的位置*/
+    top: 85px;
+    left: 15px;
+    border-radius: 50%;
+    background:#000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);       /*宽和高做出来的背景横线*/
+    width: 180px;
+    height: 2px;
+    transition: .6s ease-in;
+}
+.description .about_me:hover::after{
+width: 100px;
+transition: .3s ease-in-out;
+}
+
+.description .about_bl::after {
+    content: '';                 /*CSS伪类用法*/
+    position: absolute;         /*定位背景横线的位置*/
+    top: 63.2%;
+    left: 15px;
+    border-radius: 50%;
+    background:#000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);       /*宽和高做出来的背景横线*/
+    width: 180px;
+    height: 2px;
+    transition: .6s ease-in;
+}
+.description .about_bl:hover::after{
+width: 100px;
+transition: .3s ease-in-out;
+}
+
+.send_comments {
+    background: #fff;
+    width: 96%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 3px 4px 5px #888;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.send_comments input {
+    box-sizing: border-box;
+    width: 300px;
+    height: 34px;
+    border: 1px solid #1c2327;
+    border-radius: 8px;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.send_comments input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #008c8c;
+}
+
+.send_comments textarea {
+    width: 90%;
+    height: 100px;
+    border: 1px solid #1c2327;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.send_comments textarea:focus{
+    outline: none;
+    border: 1px solid #008c8c;
+}
+
+.send_comments button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #008c8c;
+    box-shadow: 3px 4px 5px #888;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background: #008c8c;
+    color: #fff;
+    outline:0 none !important;
+    cursor: pointer;
+    transition: .3s;
+}
+.send_comments button:hover {
+    /* background: #fff; */
+    /* color: #008c8c; */
+    border: 1px solid #ccc;
+
+    transform: scale(0.95);
+    box-shadow: 0px 0px 0px #888;
+   transition: .3s;
+}
+
+.blog_comments {
+    width: 100%;
+}
+
+.blog_comments_msg{
+    margin-top: 20px;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bolder;
+    text-shadow: 1px 2px 3px #666;
+}
+
+.blog_comments_recall{
+   width: 100%;
+   background: #d9edf7;
+   border: 1px dashed #7ca4c1;
+   padding: 10px 10px 20px 10px;
+   margin-top: 10px;
+   color: #31708f;
+   text-align: left;
+   box-sizing: border-box;
+   font-size: 16px;
+}
+
+.blog_comments_recall span {
+    display: inline-block;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.blog_comments_recall div {
+    display: inline-block;
+    width: 100%;
+    padding-left: 15px;
+    margin-top: 5px;
+}

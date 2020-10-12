@@ -1,0 +1,141 @@
+.blog {
+    background: white;
+    width: 96%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 3px 4px 5px #888;
+    text-align: left;
+}
+
+.blog_title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #008c8c;
+}
+
+.blog_msg {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+
+.blog_content {
+    padding: 5px 0px 20px 10px;
+}
+
+.send_comments {
+    background: #fff;
+    width: 96%;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 3px 4px 5px #888;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.send_comments input {
+    box-sizing: border-box;
+    width: 300px;
+    height: 34px;
+    border: 1px solid #1c2327;
+    border-radius: 8px;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.send_comments input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #008c8c;
+}
+
+.send_comments textarea {
+    width: 90%;
+    height: 100px;
+    border: 1px solid #1c2327;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.send_comments textarea:focus{
+    outline: none;
+    border: 1px solid #008c8c;
+}
+
+.send_comments button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #008c8c;
+    box-shadow: 3px 4px 5px #888;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background: #008c8c;
+    color: #fff;
+    outline:0 none !important;
+    cursor: pointer;
+    transition: .3s;
+}
+.send_comments button:hover {
+    /* background: #fff; */
+    /* color: #008c8c; */
+    border: 1px solid #ccc;
+
+    transform: scale(0.95);
+    box-shadow: 0px 0px 0px #888;
+   transition: .3s;
+}
+
+.blog_comments {
+    width: 100%;
+}
+
+.blog_comments_msg{
+    margin-top: 20px;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bolder;
+    text-shadow: 1px 2px 3px #666;
+}
+
+.blog_comments_recall{
+   width: 100%;
+   background: #d9edf7;
+   border: 1px dashed #7ca4c1;
+   padding: 10px 10px 20px 10px;
+   margin-top: 10px;
+   color: #31708f;
+   text-align: left;
+   box-sizing: border-box;
+   font-size: 16px;
+}
+
+.blog_comments_recall span {
+    display: inline-block;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.blog_comments_recall div {
+    display: inline-block;
+    width: 100%;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+.blog_content::after {
+    clear: both;
+    display: block;
+    content: '';
+}
+.blog_content img{
+    float: right;
+    padding-left: 6px;
+}

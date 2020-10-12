@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cai_blog-时间线</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/sitemap.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/axios.js"></script>
+</head>
+<body>
+    <div class="title">Devwin・Cai个人博客's article axis</div>
+    <div class="link">
+        <a href="./index.html">
+           <b>博客首页</b>
+           >>
+        </a> 
+        文章轴
+    </div>
+    <div class="blog_list" id="blog_list">
+        <p>最新文章</p>
+        <ul>
+            <li v-for='blog in blogList'>
+                <span>{{blog.ctime}}</span>
+                <span class="ciryle"></span>
+                <a href="#" v-bind:href="blog.link">{{blog.title}}</a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <script src="./js/sitemap.js"></script>
+</body>
+</html>

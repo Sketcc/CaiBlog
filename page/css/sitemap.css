@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    line-height: 50px;
+    font-size: 20px;
+    text-shadow: 1px 2px 3px #666;
+}
+
+.link {
+    border: 1px solid #eee;
+    padding: 10px;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 0.14rem;
+    color: #008c8c;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 3px 4px 5px #ccc;
+    -webkit-user-select:none;
+
+    -moz-user-select:none;
+ 
+    -ms-user-select:none;
+ 
+    user-select:none;
+    background:#ccc linear-gradient(to left,#ccc, #767677,rgb(44, 44, 44));
+    /* background: url('../img/presonal3.jpg') round; */
+}
+.link > a {
+    color: #c7c7c7;
+    text-decoration: none;
+}
+.link > a:hover {
+    color: #f40;
+}
+
+.blog_list {
+    border: 1px solid #eee;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 14px;
+    font-weight: 600;
+    background:#ccc linear-gradient(to left,#ccc, #767677,rgb(44, 44, 44));
+    border-radius: 8px;
+    box-shadow: 3px 4px 5px #ccc;
+}
+
+.blog_list p{
+    font-size: 18px;
+    color: #008c8c;
+}
+
+.blog_list ul{
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+    margin: 10px auto;
+}
+.blog_list ul span {
+    color: #888;
+}
+.blog_list ul .ciryle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+.blog_list ul .ciryle::after {
+    content: '';                 /*CSS伪类用法*/
+    position: absolute;         /*定位背景横线的位置*/
+    top: 14px;
+    left: 71px;
+    width: 1px;
+    height: 14px;
+    border-left: 1px solid #666;
+}
+
+.blog_list li {
+    list-style: none;
+    margin-top: 5px;
+    position: relative;
+}
+
+.blog_list a {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+    color: #eee;
+    font-size: 14px;
+}
+
+.blog_list li:hover .ciryle{
+   background: #f40;
+   transition: .4s ease-in-out;
+}
