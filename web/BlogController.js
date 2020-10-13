@@ -9,6 +9,31 @@ var url = require('url');
 // const { query } = require('express');
 var path = new Map();
 
+function queryBlogBySearch(request,response) {
+    var params = url.parse(request.url, true).query;
+    if (!params.search) {
+        response.writeHead(400);
+        response.end("must have be search");
+        return;
+    }
+    // console.log(params.search);
+    blogDao.queryBlogBySearch(params.search, function (result) {
+        // console.log(result);
+        blogDao.queryBlogBySearchCount(params.search, function (count) {
+            // console.log(result);
+            for(var i = 0; i < result.length;i++) {
+                result[i].content = result[i].content.replace(/<img[\w\W]*">/, "");
+                // result[i].content = result[i].content.replace(/&nbsp;/g, "");
+                result[i].content = result[i].content.replace(/<[\w\W]{1,5}>/g, "");
+                result[i].content = result[i].content.substring(0, 300);
+            }
+            response.writeHead(200);
+            response.end(JSON.stringify({count: count, list: result}));
+        });
+    });
+}
+path.set('/blog/search',queryBlogBySearch)
+
 function queryHotBlog(request,response) {
     blogDao.queryHotBlog(5, function(result) {
         response.writeHead(200);

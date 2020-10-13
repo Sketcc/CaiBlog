@@ -31,7 +31,7 @@ app.get('/queryNewComments',loader.get('/queryNewComments'));
 app.get('/queryByTag',loader.get('/queryByTag'));
 app.get('/queryByTagCount',loader.get('/queryByTagCount'));
 
-
+app.get('/blog/search',loader.get('/blog/search'))
 
 
 app.listen(globalConfig,function() {

@@ -10,7 +10,7 @@ body{
     position: relative;
     text-align: center;
     font-family: "Heiti SC","Droidsansfallback","Helvetica Neue",Helvetica,sans-serif;
-    font-size: 0.14rem;
+    font-size: 0rem;
 }
 
 .header {
@@ -397,18 +397,18 @@ body{
     /* background: url('../img/presonal3.jpg') round; */
 }
 .footer > .footer_module{
-    position: absolute;
+    /* position: absolute; */
     width: 1170px;
-    margin: 0 auto;
+    margin: -83px auto 0 auto;
     background: #1f1f1f;
     /* background: url('../img/presonal1.jpg') round; */
 
-    top: -80px;
-    left: 19.3%;
+    /* top: -80px;
+    left: 19.3%; */
     border-radius: 8px;
     box-shadow: 1px 2px 3px #888;
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 16px;
 }
 
 .footer >div >ul {
@@ -454,6 +454,7 @@ body{
     border: 1px solid #1C2327;
     float: left;
     cursor: pointer;
+    font-size: 0.14rem;
 } 
 .page_tool > ul > li:hover {
     background: #fff;
@@ -477,7 +478,9 @@ body{
  /* 媒体查询 */
 
 @media screen and (max-width:1025px) {
-
+     body {
+         background: #fff;
+     }
  
     .container {
         width: 100%;

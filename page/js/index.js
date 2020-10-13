@@ -41,6 +41,32 @@ const articleList = new Vue({
             }
         ]
     },
+    methods: {
+        generatePage: function (page) {
+            
+                var nowPage = page;
+                var pageSize = this.pageSize;
+                var totalCount = this.count;
+                var result = [];
+                result.push({ text: '<<<', page: 1 });
+                if (nowPage > 2) {
+                    result.push({ text: nowPage - 2, page: nowPage - 2 })
+                }
+                if (nowPage > 1) {
+                    result.push({ text: nowPage - 1, page: nowPage - 1 })
+                }
+                result.push({ text: nowPage, page: nowPage });
+                if (nowPage + 1 <= (totalCount + pageSize - 1) / pageSize) {
+                    result.push({ text: nowPage + 1, page: nowPage + 1 })
+                }
+                if (nowPage + 2 <= (totalCount + pageSize - 1) / pageSize) {
+                    result.push({ text: nowPage + 2, page: nowPage + 2 })
+                }
+                result.push({ text: '>>>', page: parseInt((totalCount + pageSize - 1) / pageSize) });
+                this.pageNumList = result;
+                return result          
+        }
+    },
     computed: {
         jumpTo: function () {
             return function (page) {
@@ -99,7 +125,7 @@ const articleList = new Vue({
                 } else {
                     axios({
                         method: 'get',
-                        url: '/queryByTag?page=' + (page - 1) + '&pageSize=' + pageSize +'&tag=' + tag
+                        url: '/queryByTag?page=' + (page - 1) + '&pageSize=' + pageSize + '&tag=' + tag
                     }).then(function (resp) {
                         var result = resp.data.data;
                         var list = []
@@ -203,9 +229,32 @@ const bannerBox = new Vue({
     mounted() {
         this.autoMove()
     },
-    updated() {
-        // var bannerW = document.getElementsByClassName('.banner-list');
-        // console.log(bannerW)
+})
+
+var search = new Vue({
+    el: "#search",
+    data: {
+        search: ""
+    },
+    methods: {
+        sendSearch: function () {
+            var searchKey = document.querySelector('.search_cont')
+            this.search = searchKey.value
+            axios({
+                url: "/blog/search?search=" + this.search
+            }).then(function (resp) {
+                for (var i = 0; i < resp.data.list.length; i++) {
+                    resp.data.list[i].link = '/blog_detail.html?bid=' +  resp.data.list[i].id  
+                }
+                articleList.count = resp.data.count;
+                articleList.page = 1;
+                articleList.generatePage(this.page);
+                articleList.articleList = resp.data.list;
+                alert('查询成功')
+            });
+        }
+    },
+    computed: {
 
     }
-})
+});

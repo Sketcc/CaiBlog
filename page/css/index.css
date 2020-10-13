@@ -3,7 +3,7 @@
     display: inline-block;
     width: 100%;
     position: relative;
-    max-height: 300px;
+
 }
 
 /* 轮播图区域 */
@@ -202,16 +202,24 @@
     .content .content_left .picture {
         width: 100%;
         display: inline-block;      
+        position: relative;
+    }
+    .banner-box {
+        width: 71%;
+        display: block;
     }
     .content_left .picture  .picture_static1{
         margin-bottom: 0px;
+
     }
     .content_left .picture  .picture_static span {
         font-size: 0.14rem;
     }
     .content_left .picture  .picture_static2 {
-        position: absolute;
+        /* position: absolute; */
         bottom: 4px;
+
+
     }
 
 }

@@ -36,10 +36,10 @@
                 <div class="search_w iconfont">&#xe610;
                     <div class="search_box screen_box">
                         <div class="search_open">
-                            <input type="text" class="search_cont" placeholder="请输入关键字词">
-                            <input type="submit" class="search_sumbit" value="搜索">
+                            <input type="text" class="search_cont" placeholder="请输入关键字词" v-model="search">
+                            <input type="submit" id='search' class="search_sumbit" value="搜索" v-on:click="sendSearch">
                         </div>
-                        <div class="search_close iconfont">&#xe65a;</div>
+                    <div class="search_close iconfont">&#xe65a;</div>
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/" class="iconfont">&#xe614;
+                        <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=728978391@qq.com" target="_blank" class="iconfont">&#xe614;
                         </a>
                     </li>
                     <li>

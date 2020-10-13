@@ -73,7 +73,7 @@ var newComments = new Vue({
             method: 'get',
             url: '/queryNewComments'
         }).then(function (resp) {
-            console.log(resp)
+            // console.log(resp)
             var result = [];
             for (let i = 0; i < resp.data.data.length; i++) {
                 var date = new Date(resp.data.data[i].ctime * 1000),
