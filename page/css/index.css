@@ -44,9 +44,9 @@
     height: 100%;
 }
 
-.banner-box .banner-list::marker{
+/* .banner-box .banner-list::marker{
     display: none;
-}
+} */
 
 .banner-box .index-list {
     position: absolute;

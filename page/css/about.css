@@ -110,7 +110,7 @@ transition: .3s ease-in-out;
 .description .about_bl::after {
     content: '';                 /*CSS伪类用法*/
     position: absolute;         /*定位背景横线的位置*/
-    top: 63.2%;
+    top: 76.6%;
     left: 15px;
     border-radius: 50%;
     background:#000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);       /*宽和高做出来的背景横线*/

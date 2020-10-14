@@ -17,10 +17,13 @@
     padding-top: 10px;
     padding-bottom: 20px;
     border-bottom: 1px solid gray;
+    font-size: 0.6rem;
 }
 
 .blog_content {
     padding: 5px 0px 20px 10px;
+    font-size: 1rem;
+
 }
 
 .send_comments {
