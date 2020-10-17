@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Sketcc/CaiBlog#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "mysql": "^2.18.1",
     "svg-captcha": "^1.4.0"
   }
 }
