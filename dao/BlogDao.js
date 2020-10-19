@@ -1,4 +1,4 @@
-var dbutil = require("./DBUtil");
+var dbutil = require("./DButil");
 
 function insertBlog(title, content, tags, views, ctime, utime, success) {
     var inserSql = 'insert into blog (`title`,`content`,`tags`,`views`,`ctime`,`utime`) values(?,?,?,?,?,?)';
